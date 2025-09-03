@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Student Portfolio</title>
+        <link rel="stylesheet" href="style.css"
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <!--Navbar-->    
+        <header>
+            <nav class="navbar">
+                <div class="logo">My Portfolio</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            </nav>
+        </header>
+        <!--Hero section-->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hello,I'm <span>Sujitha Uthandi</span> </h1><br>
+                <h4>A passionate student to become a Web Developer</h4>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+        <!--About Section-->
+        <section id="about" class="about">
+            <h2 style="border:solid black;">About Me</h2>
+            <p style="color:aliceblue">Educational Qualification: B.Sc Computer Science</p>
+            <p style="color:aliceblue">Age:18</p>
+            <p style="color:aliceblue">My College:Government Arts and Science College-vadalur
+            </p>
+            <P style="color:aliceblue">My Achievements:  completed Tamil and English typewriting </P>
+               <p style="color:aliceblue">Completed course: like DCA,C++ </P>
+                <p style="color:aliceblue">My Certificates: IBM skill build(Fundamental web development)</p>
+            <div class="about-content">
+                <img src="c:\Users\Welcome\Downloads\WhatsApp Image 2025-09-02 at 2.35.48 PM.jpeg" alt="Profile Photo">
+                <p style="color:#984faa">I am a student enthusiastic about the technology and modern world. I love building interactive,user-friendly softwares and explore new type of technology in the tech world.</p>
+
+            </div>
+        </section>
+        <!--Project Section-->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A simple student reveal card using HTML and CSS.</p>
+                    <a href="htmksa.html" targer="-blank">View Project 1</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>This describes about an simple html.</p>
+                    <a href="c:\Users\Welcome\Desktop\naanmudhalvan\firstweek.html" target="-blank">View Project 2</a>
+                </div>
+            </div>
+        </section>
+        <!--Contact Section-->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="Submit">send</button> 
+            </form>
+            <p id="form-status"></p>
+        </section>
+        <script src="script.js"></script>
+        <footer>
+            <p>&copy; 2025 Sujitha Uthandi All rights reserved</p>
+        </footer>
+    </body>
+    </html>
+<style>
+body {
+  margin: 0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background-color:firebrick;
+}
+header{
+    background:hotpink;
+    color:rgb(157, 153, 153);
+    padding:10px 20px;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:khaki
+    ;
+}
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+.nav-links{
+    margin:0 10px;
+}
+.nav-links{
+    color:white;
+    text-decoration:none;
+}
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+/*Hero Section*/
+    .hero{
+        background:linear-gradiant(to right,#4fafce,#00f2fe);
+        color:rgb(231, 15, 15);
+        text-align:center;
+        padding:60px 20px;
+    }
+    .hero h1 {
+        color:rgb(176, 75, 75); border:5px solid rgb(54, 7, 111);
+    }
+    h4{
+        color:#00f2fe;
+    }
+    .btn{
+        background:rgb(200, 77, 77);
+        color:#333;
+        padding:10px 20px;
+        text-decoration:italic;
+        margin-top:20px;
+        display:inline-block;
+        border-radius:5px;
+    }
+/*About Section*/ 
+.about{
+    padding:40px 20px;
+    text-align:center;
+    border: double="dotted:gray ";
+
+}
+.about-content{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+.about-content img{
+    max-width:150px;
+    border-radius:50%;
+    margin:20px;
+
+}
+/*Projects Section*/
+.projects{
+    padding:40px 20px;
+    background:#f4f4f4;
+    text-align:center;
+}
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.project-card{
+    background:rgb(204,97,97);
+    padding:20px;
+    border-radius:10px;
+    transition:transform 0.3s;
+}
+.project-card:hover{
+    transform:scale(1.05);
+}
+/*Contact Section*/
+.contact{
+    padding:40px 20px;
+    text-align:center;
+}
+form{
+    max-width:400px;
+    margin:auto;
+}
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+button{
+    background:#4facfe;
+    color:white;
+    border:none;
+    padding:10px;
+    width:100%;
+    cursor:pointer;
+}
+button:hover{
+    background:#00c6ff;
+}
+/*Footer*/
+footer{
+    background:#333;
+    color:white;
+    padding:10px;
+    text-align:cente;
+}
+/*Responsive Navbar*/
+@media screen and(max-width:768px){
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        background:#333;
+        position:absolute;
+        top:60px;
+        width:200px;
+    }
+    .nav-links.show{
+        display:flex;
+    }
+    .menu-toggle{
+        display:block;
+    }
+};
+</style>
+<script>
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name && email &&  message) {
+        formStatus.textContent = '✅️ Message sent successfully!';
+        formStatus.style.color = 'green';
+        contactForm.reset();
+    } else {
+        formStatus.textContent = '❌ Please fill in all fields.';
+        formStatus.style.color = 'red';
+    }
+});
+</script>
+</html>
