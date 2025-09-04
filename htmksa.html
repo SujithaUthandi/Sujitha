@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>foat layout example</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin:100px;
+        }
+        .container{
+            width:100%;
+            border:10px solid rgb(128, 51, 0);
+            background-color: rgb(160, 160, 156);
+            padding: 30px;
+        }
+        .left-box{
+            float:left;
+            width:45%;
+            background-color: rgb(229, 148, 155);
+            padding: 15px;
+            margin-right: 5%;
+            box-sizing: border-box;
+        }
+        .right-box{
+            float: right;
+            width: 45%;
+            background-color: rgba(217, 224, 229, 0.955);
+            padding:15px;
+            margin-left: 5%;
+            box-sizing:border-box;
+        }
+        .clearfix::after{
+              content:"";
+              display:table;
+              clear:both;
+        }
+        .footer{
+            margin-top: 20px;
+            padding:10px;
+            background-color: rgb(193, 16, 104);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student ID Card</h2>
+    <div class="container clearfix">
+        <div class="left-box">
+            <center><h3>Government Arts and Science </h3>
+            <h4 >college-vadalur</h4></center>
+            <div class="top-right-image">
+           <img src="c:\Users\Welcome\Downloads\WhatsApp Image 2025-09-02 at 2.35.48 PM.jpeg"  width="50px" height="50px">
+            </div>
+            <p>Student Name:U.Sujitha</p>
+            <p>Roll no: 12424UCSC032</p>
+            <p>Department: B.SC Computer science</p>
+        </div>
+        <div class="right-box"><br><br>
+            <p>Contact:9926354379</p>
+            <p>Blood group: A1+ve</p>
+            <p>Address: 110k, mettukuppam,</p>
+            <p>         vadalur,</p>
+            <p>         cuddalore 607303</p><br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
